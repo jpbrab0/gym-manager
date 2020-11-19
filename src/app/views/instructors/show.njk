@@ -49,5 +49,15 @@
       </div>
 
     </section>
+    <script>
+      const formDelete = document.querySelector("#form-delete");
+      formDelete.addEventListener("submit", (event) => {
+        const confirmation = confirm("Tem certeza que você quer deletar esse instrutor?");
+        if (!confirmation) {
+          event.preventDefault();
+        }
+      });
+    </script>
   </div>
+
 {% endblock content %}

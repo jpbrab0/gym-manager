@@ -20,13 +20,13 @@ O Gym Manager é um sistema responsavel pelo controle de instrutores e membros d
 
 - [x] Deletar instrutores
 
-- [ ] Ver todos os membros cadastrados
+- [x] Ver todos os membros cadastrados
 
-- [ ] Criar membros
+- [x] Criar membros
 
-- [ ] Editar membros
+- [x] Editar membros
 
-- [ ] Deletar membros
+- [x] Deletar membros
 
 ### Tecnologias
 
