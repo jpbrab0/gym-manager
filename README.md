@@ -6,15 +6,19 @@ Projeto feito para estudo de NodeJs
 
 O Gym Manager é um sistema responsavel pelo controle de instrutores e membros de uma academia.
 
+<p align="center">
+    <img src="./images/example.png" />
+</p>
+
 ### Funções do Gym Manager
 
 - [x] Ver todos os instrutores/membros cadastrados
 
 - [x] Criar instrutores/membros
 
-- [x] Editar instrutores/membros
+- [ ] Editar instrutores/membros
 
-- [x] Deletar instrutores/membros
+- [ ] Deletar instrutores/membros
 
 ### Tecnologias
 
