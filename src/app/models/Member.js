@@ -54,7 +54,7 @@ module.exports = {
       email=($5),
       blood=($6),
       weight=($7),
-      height=($8),
+      height=($8)
     WHERE id = $9
     `
     const values = [
