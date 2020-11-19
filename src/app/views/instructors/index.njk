@@ -1,0 +1,33 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+  <div class="container table-container">
+    <a href="/instructors/create" class="button">Novo</a>
+    <table width="100%">
+      <thead>
+        <tr>
+          <th>Instrutor</th>
+          <th>Atendimento</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for instructor in instructors %}
+          <tr>
+            <td>
+              <span style="background: url({{instructor.avatar_url}}) no-repeat center / cover"></span>
+              <p>{{instructor.name}}</p>
+            </td>
+            <td>
+              <span class="table-services">{{instructor.services}}</span>
+            </td>
+            <td>
+              <a class="button" href="/instructors/{{instructor.id}}">Ver</a>
+            </td>
+          </tr>
+        {% endfor %}
+
+      </tbody>
+    </table>
+  </div>
+{% endblock content %}

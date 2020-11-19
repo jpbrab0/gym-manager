@@ -1,0 +1,41 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+  <div class="container table-container">
+    <a href="/members/create" class="button">Novo</a>
+    <table width="100%">
+      <thead>
+        <tr>
+          <th>Instrutor</th>
+          <th>Email</th>
+          <th>Peso</th>
+          <th>Altura</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for member in members %}
+          <tr>
+            <td>
+              <span style="background: url({{member.avatar_url}}) no-repeat center / cover"></span>
+              <p>{{member.name}}</p>
+            </td>
+            <td>
+              {{member.email}}
+            </td>
+            <td>
+              {{member.weight}}kg
+            </td>
+            <td>
+              {{member.height}}cm
+            </td>
+            <td>
+              <a class="button" href="/members/{{member.id}}">Ver</a>
+            </td>
+          </tr>
+        {% endfor %}
+
+      </tbody>
+    </table>
+  </div>
+{% endblock content %}

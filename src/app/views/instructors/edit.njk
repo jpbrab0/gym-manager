@@ -1,0 +1,18 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+  <div class="container">
+    <section class="avatar" style="background: url({{instructor.avatar_url}}) no-repeat center / cover"></section>
+    <section class="detail">
+      <form class="content" method="POST" action="/instructors?_method=PUT">
+        <h3>editar instrutor</h3>
+
+        {% include 'instructors/form.njk' %}
+
+        <input type="hidden" name="id" value="{{instructor.id}}">
+
+      </form>
+
+    </section>
+  </div>
+{% endblock content %}
