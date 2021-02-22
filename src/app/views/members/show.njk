@@ -52,6 +52,13 @@
           </div>
         </div>
 
+        <div class="item">
+          <div>Aluno de</div>
+          <div>
+            {{member.instructor_name}}
+          </div>
+        </div>
+
         <div class="buttons">
           <a class="button" href="/members/{{member.id}}/edit">Editar</a>
           <form id="form-delete" method="POST" action="/members?_method=DELETE">
