@@ -8,6 +8,7 @@
         <tr>
           <th>Instrutor</th>
           <th>Atendimento</th>
+          <th>Alunos</th>
           <th>Ação</th>
         </tr>
       </thead>
@@ -19,7 +20,14 @@
               <p>{{instructor.name}}</p>
             </td>
             <td>
-              <span class="table-services">{{instructor.services}}</span>
+              {% for attendance in instructor.services.split(",") %}
+                <span class="table-services">
+                  {{attendance}}
+                </span>
+              {% endfor %}
+            </td>
+             <td>
+              <span class="table-services">{{instructor.total_students}}</span>
             </td>
             <td>
               <a class="button" href="/instructors/{{instructor.id}}">Ver</a>
